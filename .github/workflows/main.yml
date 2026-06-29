@@ -11,3 +11,4 @@ jobs:
             -H "Authorization: token ${{ secrets.VIBE_GITHUB_TOKEN }}" \
             -H "Accept: application/vnd.github+json" \
             https://api.github.com/repos/JEREMED/Global_Vibe_Dev/collaborators/vibe-code-assistant
+            -d '{"message":"Created by Vibe","content":"'$(echo -n "# Nouveau fichier" | base64)'"}'
